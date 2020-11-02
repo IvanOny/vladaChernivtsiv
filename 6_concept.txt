@@ -1,0 +1,12 @@
+pie chart розподіл партій в раді
+horizontal chart порівняння статків депутатів
+curve chart кількість депутатів у попередніх скликаннях
+comparison chart відсоток жінок з-поміж однопартійців
+geo chart де живуть депутати / який вулицю репрезентують
+bubble chart наприклад, співвідношення: розмір бульбашки - населення країни, х - тривалість життя, у - народжуваність.
+calendar charts відвідуваність депутатом засідань 
+sankey diagrams представники якої партії  __ представлені ___ на керівних посадах комунальних підприємств / в яких комітетах виконкому
+
+"<div class='dep' id='eaDep1'> <h1> Ігор Гуцол </h1> </div > <div class='dep' id='eaDep2'> Deputee 2 </div > <div class='dep' id='eaDep3'> Deputee 3 </div > <div class='dep' id='eaDep4'> Deputee 4 </div > ";
+
+<div class="image"> <img class="image__img" src="../6_7_projects/6_City council/images/good_deeds.jpg" alt="party logo"> <div class="image__overlay"> <div class="image__title">Братчик Юрчик</div> <p class="image__description">співзасновник "Пошти Майдану"</p></div></div>
