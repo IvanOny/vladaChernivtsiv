@@ -29,9 +29,16 @@ header {
     overflow: hidden; 
 }  
 
-/* #navbar-left {
-    background-color: #333;
-} */
+.block {
+    float: left;
+    padding: 15px;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#navbar-left {
+}
 
 #navbar-left ul {
     padding: 0;
@@ -108,6 +115,7 @@ g:hover {
 }
 
 #sidebar {
+    position: fixed;
     float: left;
     width: 30%;
     /* background: #333; */
@@ -146,10 +154,11 @@ g:hover {
 
 
 .image {
+    float: left;
     position: relative;
-    width: 30%; /*or percentage; or inside of flex-box or grid */ 
-    padding: 10px;
-    margin: 10px;
+    width: 33%; /*or percentage; or inside of flex-box or grid */ 
+    padding: 5px;
+    margin: 0px;
 }
 
 .image__img {
@@ -198,4 +207,21 @@ g:hover {
 .image__description {
     font-size: 1em;
     margin-top: 0.25em;
+}
+
+/* .deputees {
+    display: table;
+} */
+
+.eaDeputees {
+    display: inline-block;
+    overflow: auto;
+    background: #ff6000;    
+}
+
+.snDeputees {
+    overflow: auto;
+    margin-top: 10px;
+    background: green;
+    border: orangered;
 }
