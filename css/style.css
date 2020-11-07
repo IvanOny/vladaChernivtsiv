@@ -1,9 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
+html {
     box-sizing: border-box;
-  }
-  
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.content-box-element {
+    box-sizing: content-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -11,70 +22,31 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #f4f4f4;
     padding: 1rem;
     text-align: center;
+    height: 11vh;
+    letter-spacing: 3px;
   }
 
-/* .container {
-    margin: auto;
-    width: 500px;
-    overflow: auto;
-    padding: 3rem 2rem;
-  }   */
+/* nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    font-family: 'Poppins', sans-serif;
+    border: 2px red solid;
+}   */
 
-.container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden; 
-}  
-
-.block {
-    float: left;
-    padding: 15px;
-    width: 33.3%;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-#navbar-left {
-}
-
-#navbar-left ul {
+ul {
     padding: 0;
     list-style: none;
     margin: 5px;
     align-items: center;
-}
-
-#navbar-left li {
-    display: flex;
-    text-align: center;    
-}
-
-#navbar-left a {
-    text-decoration: none;
-}
-
-.button {
-    margin: 6px;
-    padding: 8px;
-    border-radius: 23%;
-    background: blue;
-    color: white;
-    font-size: 18px;
-} 
-
-.chart {
-    margin: 0;
-    width:850px;
-    height: 540px;
-    padding: 0;
-    fill-opacity: 0.1;
-    }
-
-.chart:hover {
-    opacity: 1.0;
 }
 
 g {
@@ -85,72 +57,179 @@ g:hover {
     fill-opacity: 1.0;
 }
 
-.dep {
-    background-image: url('../images/good_deeds.jpg');
-    position: relative;
-    min-height: 260px;   
-    float: left;
-    padding: 15px;
-    width: 30%;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    text-align: center;
-    box-sizing: border-box;
-    margin: 10px;
-    background-repeat: no-repeat;
-
-    background-position: center;
-
-    display: block;
-
-    object-fit: cover;
-    object-position: center;
+.header {
+    box-shadow: 0px 0px 25px 4px rgba(0,0,150,.3);
+    border-radius: 34%;
+    padding: 14px;
 }
 
-#main {
-    float: right;
-    width: 70%;
-    padding: 0 30px;
-    box-sizing: border-box;
+.navParties {
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 4px;
 }
 
-#sidebar {
-    position: fixed;
-    float: left;
-    width: 30%;
-    /* background: #333; */
+.navFilters {
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 4px;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    margin: auto;
+    overflow: hidden; 
+    border: 5px cyan solid;
+}  
+
+/* .sidebar {
+    width: 38%; 
+    height: 467px;
+    background: #333;
     color: #fff;
     padding: 10px;
-    box-sizing: border-box;
+    border: 5px green solid;
+    display: fixed;
+} */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex-direction: column;
+    justify-content: left; */
+    /* width: 64vw; */
+    height: 86.8vh;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* margin: auto; */
+    /* overflow: hidden;  */
 }
 
-#eaDep1 {
-    background-image: url('../images/ea/gutsol.jpg');
-    background-position: top;
-    text-align: right;
-}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    height: 85vh;
+    /* top: 8vh; */
+    background-color: rgba(24, 41, 41, 0.8);
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in;
+    padding: 10px;
 
-#eaDep1 h1 {
-    padding-top: 80%;
-    color: white;
-}
-
-#snDep1 {
-    background-image: url('../images/sn/druhanovskii.jpg');
-    background-position: center;
-    text-align: right;
-}
-
-#snDep1 h1 {
-    padding-top: 80%;
-    color: white;
 }   
 
+.nav-links li {
+    list-style: none;
+    border: 1px darkmagenta solid;
+    box-shadow: 0 0 10px 5px;
+    padding: 5px;
+    border-radius: 10%;
+    opacity: 0;
+}
+
+.nav-links a {
+    color: rgb(238, 234, 234);
+    text-decoration: none;   
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 0px;
+}
+.nav-active {
+    transform: translateX(0%);
+}
 
 
+/* it looks like I didn't use it at all
+ .nav-transition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px blue solid;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+} */
 
 
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
+.chart0 {
+    display: none;
+}
+
+.chart {
+    margin: 0;
+    /* width:850px; */
+    /* height: 540px; */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* width: max-content; */
+    /* height: max-content; */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    fill-opacity: 0.1;
+    border: 3px brown solid;
+    /* display: none; */
+    }
+
+.chart:hover {
+    opacity: 1.0;
+}
+
+.deputees {
+    display: flex;
+    flex-direction: column;
+    /* overflow: scroll; */
+
+}
+
+.deputees1 {
+    display: flex;
+}
+
+.eaDeputees {
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around; */
+    /* position: absolute; */
+    z-index: 1;
+    /* left: 0px; */
+    height: 85vh;
+    /* overflow: auto; */
+    /* transform: translateX(-105%);
+    transition: transform 0.5s ease-in; */
+}
+
+.eaDeputees-active {
+    transform: translateX(0%);
+}
+
+
+.snDeputees {
+    overflow: auto;
+    margin-top: 10px;
+    background: green;
+    border: orangered;
+}
 
 
 .image {
@@ -165,6 +244,8 @@ g:hover {
     display: block;
     width: 100%;
     border-radius: 50%;
+    box-shadow: 0 0 11px 4px rgba(255, 96, 0, 0.4);
+
 }
 
 .image__overlay {
@@ -209,19 +290,44 @@ g:hover {
     margin-top: 0.25em;
 }
 
-/* .deputees {
-    display: table;
-} */
+#chartLink {
+    color: burlywood;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 0px;
+    }
 
-.eaDeputees {
-    display: inline-block;
-    overflow: auto;
-    background: #ff6000;    
+#chartItem {
+    border: 1px lightgreen solid;
+    box-shadow: 0 0 10px 5px;
+    padding: 5px;
+    border-radius: 10%;
 }
 
-.snDeputees {
-    overflow: auto;
-    margin-top: 10px;
-    background: green;
-    border: orangered;
+#piechart_3d {
+    /* width: 100%; */
+    height: 100%;
 }
+
+#eaDep1 {
+    background-image: url('../images/ea/gutsol.jpg');
+    background-position: top;
+    text-align: right;
+}
+
+#eaDep1 h1 {
+    padding-top: 80%;
+    color: white;
+}
+
+#snDep1 {
+    background-image: url('../images/sn/druhanovskii.jpg');
+    background-position: center;
+    text-align: right;
+}
+
+#snDep1 h1 {
+    padding-top: 80%;
+    color: white;
+}   
