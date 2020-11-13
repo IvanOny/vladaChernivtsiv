@@ -90,35 +90,56 @@ function drawChart() {
 
 
 // function linkSwitch() {
-const linkSwitch = () => {
-    const eaLink = document.querySelector('#eaLink');
-    const piechart = document.querySelector('.chart');
-    const eaDeputees = document.querySelector('.eaDeputees');
-    const eaPhotos = document.querySelectorAll('.image');
+// const linkSwitch = () => {
+//     const eaLink = document.querySelector('.eaLink');
+//     const piechart = document.querySelector('.piechart');
+//     const eaDeputees = document.querySelector('.eaDeputees');
+//     const eaPhotos = document.querySelectorAll('.image');
+//     const imageTitle = document.querySelector('.container');
 
-    eaLink.addEventListener('click', () => {
-        piechart.classList.toggle('chart0');
-        eaDeputees.classList.toggle('eaDeputees-active');
+//     eaLink.addEventListener('click', () => {
+//         preventDefault(); // I don't know if it does help
+//         piechart.classList.toggle('nopiechart');
+//         imageTitle.classList.toggle('container1');
+//         eaDeputees.classList.toggle('eaDeputees-active');
 
-        eaPhotos.forEach((photo, index) => {
-            if (photo.style.animation) {
-                photo.style.animation = ''
-            } else {
-                photo.style.animation = `navLinkFade 0.5s ease-out forwards ${index / 4 + 0.3}s`
-            }
-        });
-    });
-}
+//         // eaPhotos.forEach((photo, index) => {
+//         //     // if (photo.style.animation) {
+//         //     //     photo.style.animation = ''
+//         //     // } else {
+//         //     photo.style.animation = `navLinkFade 0.5s ease-out forwards ${index / 4 + 0.3}s`
+//         //     // }
+//         // });
+//     });
+// };
 
 // linkSwitch();
+
+// var eaLink = document.getElementsByClassName('eaLink');
+// var chart = document.getElementsByClassName('piechart');
+// console.log(eaLink, chart);
+
+// eaLink.addEventListener('click', fraco);
+
+// function fraco(e) {
+//     e.preventDefault();
+//     // chart.style.display = 'none';
+// }
+
 
 const navSlide = () => {
     const burger = document.querySelector('.navParties');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    const piechart = document.querySelector('.piechart');
+    const eaDeputees = document.querySelector('.eaDeputees');
+
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
+        // piechart.classList.toggle('nopiechart');
+        eaDeputees.classList.toggle('eaDeputees-active');
+
 
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
@@ -132,7 +153,7 @@ const navSlide = () => {
 
 const app = () => {
     navSlide();
-    linkSwitch();
+    // linkSwitch();
 }
 
 app();
