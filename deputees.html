@@ -6,131 +6,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6_deputees</title>
     <link rel="stylesheet" href="css/style.css">
-
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-</head>
+
 
 <body>
     <header>
-        <div>
-            <h3><span class="header navParties">Партії</span></h3>
+        <a id='bossLink' href="#boss">Голова Міської Ради</a>
+        <a id='eaLink' href="#ea">Єдина Альтернатива</a>
+        <a id='kmLink' href="#km">Команда Михайлішина</a>
+        <a id='esLink' href="#es">Європейська Солідарність</a>
+        <div class="title">
+            <h1>Депутати Чернівецької міської ради</h1>
+            <div class="image__overlay">
+                <p class="image__description">
+                <p>Єдина Альтернатива - 26% </p>
+                <p>Команда Михайлішина - 14%</p>
+                <p>Європейська Солідарність - 14%</p>
+                <p>Пропозиція - 14%</p>
+                <p>Слуга Народу - 12%</p>
+                <p>Народний Контроль - 12%</p>
+                <p>Рідне Місто - 7%</p>
+                </p>
+            </div>
         </div>
-        <div>
-            <h1><span class="header title">ВЛАДА ЧЕРНІВЦІВ</span></h1>
-        </div>
-        <div>
-            <h3><span class="header navFilters">Фільтри</span></h3>
-        </div>
-
+        <a id='prLink' href="#pr">Пропозиція</a>
+        <a id='snLink' href="#sn">Слуга Народу</a>
+        <a id='nkLink' href="#nk">Народний Контроль</a>
+        <a id='rmLink' href="#rm">Рідне Місто</a>
     </header>
 
-
-    <div class="container">
-        <!-- <nav class="sidebar"> -->
-        <ul class="nav-links">
-            <li><a class='eaLink' href="">Єдина Альтернатива</a></li>
-            <li><a id='snLink' href="">Слуга Народу</a></li>
-            <li><a id='kmLink' href="">Команда Михайлішина</a></li>
-            <li><a id='esLink' href="">Європейська Солідарність</a></li>
-            <li><a id='prLink' href="">Пропозиція</a></li>
-            <li><a id='nkLink' href="">Народний Контроль</a></li>
-            <li><a id='rmLink' href="">Рідне Місто</a></li>
-            <li id="chartItem"><a id='chartLink' href="">Діаграма</a></li>
-        </ul>
-    </div>
-
-    <!-- </nav> -->
     <section class='main'>
-        <div class="chart">
-            <div id="piechart_3d" class="piechart"></div>
-        </div>
+
         <div class="deputees">
-            <div class="eaDeputees">
+            <!-- <a name='ea' href=""></a> -->
+
+            <a name='boss' href=""></a>
+            <div class="boss">
                 <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
+                    <img class="image__img" src="images/ea/Klichuk2.jpg" alt="фото депутата">
                     <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Віталій Другановський</div>
-                        <p class="image__description">старався, але мером не обрався. Зажуривсь...</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
-                    </div>
-                </div>
-                <div class="image">
-                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
-                    <div class="image__overlay">
-                        <div class="image__title">Братчик Юрчик</div>
-                        <p class="image__description">співзасновник "Пошти Майдану"</p>
+                        <div class="image__title">Роман Клічук</div>
+                        <p class="image__description">Голова Чернівецької Міської Ради</p>
                     </div>
                 </div>
             </div>
+
+            <a name='ea' href=""></a>
+            <div class="eaDeputees ea1">
+                <div class="image">
+                    <img class="image__img" src="images/good_deeds.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Братчик Юрчик</div>
+                        <p class="image__description">співзасновник "Пошти Майдану"</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/ea/Radchuk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Валентина Радчук</div>
+                        <p class="image__description">завідувачка кафедри практичної психології ЧНУ</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" id="Abramiuk" src="images/ea/Abramiuk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Галина Абрам'юк</div>
+                        <p class="image__description">заступниця директора Чернівецької гімназії №5</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" id="Prokop" src="images/ea/Prokop.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Тарас Прокоп</div>
+                        <p class="image__description">експерт з питань реформи місцевого самоврядування</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" id="Bilous" src="images/ea/Bilous.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Дмитро Білоус</div>
+                        <p class="image__description">завідувач відділення анестезіології першої міської лікарні</p>
+                    </div>
+                </div>
+            </div>
+            <div class="eaDeputees ea2">
+                <div class="image">
+                    <img class="image__img" src="images/ea/Zozuliak.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Василь Зозуляк</div>
+                        <p class="image__description">співвласник фірм “Некст Проперті” та “Симетрія </p>
+                        <p class="image__description">Інвест</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/ea/Biloskurskyi.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title Biloskurskyi">Руслан Білоскурський</div>
+                        <p class="image__description">декан економічного факультету ЧНУ</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/ea/Kyryliuk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Марина Кирилюк</div>
+                        <p class="image__description">засновниця Західної маркетингової компанії</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/ea/Kalmykova.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Наталія Калмикова</div>
+                        <p class="image__description">директорка комунального підприємства «Центр первинної медико-санітарної допомоги «Садгора».</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/ea/Hryniuk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Сергій Гринюк</div>
+                        <p class="image__description">власник компанії “Гріко”, співвласник логістичної компанії “Логістік і Ко”</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/ea/Dembitska.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Наталія Дембіцька</div>
+                        <p class="image__description">власниця дитячого табору «Буковинське орлятко» </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <a name='km' href=""></a>
+            <div class="kmDeputees">
+                <div class="image">
+                    <img class="image__img" id='Mykhailishyn' src="images/km/Mykhailishyn.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Віталій Михайлішин</div>
+                        <p class="image__description">секретар міськради та в.о. мера 2010-2014 pp.</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/km/Babiuk.jpeg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Aнтоніна Бабюк</div>
+                        <p class="image__description">членкиня ради профспілкової організації підприємців “Калинівського ринку"</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/km/Olevych.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Аліна Олевич</div>
+                        <p class="image__description">Підприємиця, займається нерухомістю</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/km/Tymofeiev.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Денис Тимофєєв</div>
+                        <p class="image__description">голова ГО “Чернівецький міський студентський парламент”</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/km/Mykhailishyn.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/km/Mykhailishyn.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+            </div>
+
+            <a name='es' href=""></a>
+            <div class="esDeputees">
+                <div class="image">
+                    <img class="image__img" src="images/es/Maksymiuk.jpeg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/es/Maksymiuk.jpeg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/es/Maksymiuk.jpeg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/es/Maksymiuk.jpeg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/es/Maksymiuk.jpeg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/es/Maksymiuk.jpeg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+            </div>
+
+            <a name='pr' href=""></a>
+            <div class="prDeputees">
+                <div class="image">
+                    <img class="image__img" src="images/pr/Kaspruk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/pr/Kaspruk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/pr/Kaspruk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/pr/Kaspruk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/pr/Kaspruk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/pr/Kaspruk.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+            </div>
+
+            <a name='sn' href=""></a>
             <div class="snDeputees">
                 <div class="image">
                     <img class="image__img" src="images/sn/druhanovskii.jpg" alt="фото депутата">
@@ -168,12 +312,106 @@
                     </div>
                 </div>
             </div>
+
+            <a name='nk' href=""></a>
+            <div class="nkDeputees">
+                <div class="image">
+                    <img class="image__img" src="images/nk/Yarynych.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/nk/Yarynych.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/nk/Yarynych.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/nk/Yarynych.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/nk/Yarynych.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+            </div>
+
+            <a name='rm' href=""></a>
+            <div class="rmDeputees">
+                <div class="image">
+                    <img class="image__img" src="images/rm/Prodan.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/rm/Prodan.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" src="images/rm/Prodan.jpg" alt="фото депутата">
+                    <div class="image__overlay">
+                        <div class="image__title">Друг</div>
+                        <p class="image__description">Слуга</p>
+                    </div>
+                </div>
+            </div>
+
+            <a name='general' href=""></a>
         </div>
     </section>
-
 
     <footer></footer>
     <script src='main.js'></script>
 </body>
 
 </html>
+
+<!-- <div id="piechart_3d" class="chart"></div> -->
+
+<!-- 
+<header>
+
+    <div>
+        <div class="nav">
+            <ul class="nav-links">
+                <li><a id='eaLink' href="#ea">Єдина Альтернатива</a></li>
+                <li><a id='kmLink' href="#km">Команда Михайлішина</a></li>
+                <li><a id='esLink' href="#es">Європейська Солідарність</a></li>
+            </ul>
+                        </div>
+    </div>
+
+    <div class="title">
+        <h1>Депутати Чернівецької міської ради</h1>
+    </div>
+    <div class="nav">
+        <ul class="nav-links">
+            <li><a id='prLink' href="#pr">Пропозиція</a></li>
+            <li><a id='snLink' href="#sn">Слуга Народу</a></li>
+            <li><a id='nkLink' href="#nk">Народний Контроль</a></li>
+            <li><a id='rmLink' href="#rm">Рідне Місто</a></li>
+            <!-- <li><a id='chartLink' href="#chart">ДІАГРАМА</a></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+<!-- </header> -->
